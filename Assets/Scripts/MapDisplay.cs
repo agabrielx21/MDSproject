@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class MapDisplay : MonoBehaviour {
-
-    public Renderer textureRender;
-    public MeshFilter meshFilter;
-    public MeshRenderer meshRenderer;
-
-    public void DrawTexture(Texture2D texture) {
-        textureRender.sharedMaterial.mainTexture = texture;
-        textureRender.transform.localScale = new Vector3(texture.width, 1, texture.height);
-    }
-
-    public void DrawMesh(MeshData meshData, Texture2D texture) {
-        meshFilter.sharedMesh = meshData.CreateMesh();
-        meshRenderer.sharedMaterial.mainTexture = texture;
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cb4b7686eb50d78bdc6975163e162f168c059724a8fec7f453a1795ba96959c
+size 648
